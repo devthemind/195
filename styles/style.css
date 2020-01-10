@@ -10,7 +10,7 @@
 body {
   font-family: IRANSansWeb;
   direction: rtl;
-  background-color: #f8f9fa;
+  background-color: #fff4e4;
 }
 
 .rtl-text {
@@ -18,21 +18,22 @@ body {
 }
 
 #header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #e5e5e5;
+  padding-top: 0.5rem;
+  background-color: #f88020;
 }
 
 .header-image {
   text-align: center;
+  padding-top: 0.25rem;
 }
 
 .header-text-div {
-  padding-top: 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 0.1rem;
+  padding-top: 2rem;
 }
 
 .header-text {
-  padding-top: 1.5rem;
   color: rgb(0, 0, 0, 0.9);
   font-size: 1.2rem;
 }
@@ -55,10 +56,24 @@ body {
     padding-top: 1.2rem;
     padding-right: 8rem;
   }
+  .body-upper-cointainer-text {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .body-upper-cointainer-image {
+    padding-left: 0rem;
+    text-align: center;
+  }
 }
 
-.navbar-text {
+.body-upper-cointainer-text {
+  padding-right: 4rem;
   padding-top: 2rem;
+}
+
+.body-upper-cointainer-image {
+  padding-left: 2rem;
+  text-align: center;
 }
 
 .container-fluid-body {
