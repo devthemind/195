@@ -10,7 +10,6 @@
 body {
   font-family: IRANSansWeb;
   direction: rtl;
-  background-color: #fff4e4;
 }
 
 .rtl-text {
@@ -18,23 +17,22 @@ body {
 }
 
 #header {
-  padding-top: 0.5rem;
-  background-color: #f88020;
+  background-color: #007bff;
 }
 
 .header-image {
   text-align: center;
   padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .header-text-div {
-  margin-right: 1rem;
-  margin-bottom: 0.1rem;
-  padding-top: 2rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
 }
 
 .header-text {
-  color: rgb(0, 0, 0, 0.9);
+  color: #ffffff;
   font-size: 1.2rem;
 }
 
@@ -66,21 +64,68 @@ body {
   }
 }
 
+.body-header-container {
+  padding-top: 1rem;
+}
+
 .body-upper-cointainer-text {
-  padding-right: 4rem;
+  padding-right: 3.3rem;
+  padding-left: 2rem;
   padding-top: 2rem;
+  line-height: 2rem;
 }
 
 .body-upper-cointainer-image {
-  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
 .container-fluid-body {
-  padding-top: 2rem;
-  text-align: right;
+  padding: 4rem;
 }
 
 .middle-pos-button {
   text-align: center;
+}
+
+.card-text {
+  line-height: 2rem;
+}
+
+.icon-text {
+  text-align: center;
+}
+
+.icon-container-text {
+  padding-top: 2rem;
+}
+
+.fa-hourglass-start {
+  color: #12cad6;
+}
+
+.fa-smile {
+  color: #eb8242;
+}
+
+.fa-gavel {
+  color: #50d890;
+}
+
+.fa-search {
+  color: #f0134d;
+}
+
+.carosel-body {
+  padding: 4rem;
+}
+
+#footer {
+  background-color: #007bff;
+  color: #ffffff;
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.1rem;
+  padding-right: 2rem;
 }
