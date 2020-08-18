@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink,
     CardDeck, Card, CardBody } from 'reactstrap';
-import CustomizedCarousel from './CustomizedCarousel';
 
 function Body() {
     const [firstDropdownOpen, firstSetDropdownOpen] = useState(false);
@@ -144,11 +143,6 @@ function Body() {
                         </div>
                     </Col>
                     <Col lg="2"></Col>
-                </Row>
-                <Row>
-                    <Col lg="12" className="carosel-body">
-                        <CustomizedCarousel />
-                    </Col>
                 </Row>
             </Col>
             <Col lg="2"></Col>

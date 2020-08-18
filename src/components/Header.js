@@ -9,13 +9,13 @@ function Header() {
 
     return(
         <Container fluid={true}>
-            <Row id="header">
+            <Row id="header" className="fixed-top">
                 <Col lg="8">
                     <Row>
                         <Col lg="2" md="4" sm="1" className="header-image">
                             <img src={require('../assets/images/cra-logo.svg')} />
                         </Col>
-                        <Col lg="8" md="6" sm="9" className="header-text-div">
+                        <Col lg="8" md="6" sm="9" >
                             <p className="rtl-text text-nowrap header-text">سامانه ثبت و پاسخگویی به شکایات 195</p>
                         </Col>
                     </Row>
