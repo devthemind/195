@@ -70,10 +70,11 @@ function Body() {
                                 </NavItem>
                                 :
                                 <Dropdown nav isOpen={firstDropdownOpen} toggle={first_toggle}>
-                                <DropdownToggle nav caret>{item.mainTitle}</DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem className="rtl-text">{item.subTitle}</DropdownItem>
-                                </DropdownMenu>
+                                    <DropdownToggle nav caret>{item.mainTitle}</DropdownToggle>
+                                    <DropdownMenu>
+                                        <DropdownItem className="rtl-text">{item.subTitle}</DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
                             })}
                         </Nav>
                     </Col>
