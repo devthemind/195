@@ -25,7 +25,7 @@ function Header() {
                         <Col lg="5">
                         </Col>
                         <Col lg="7" md="2" sm="2">
-                            <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
+                            <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary py-0">
                                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                                 <Collapse isOpen={!collapsed} navbar>
                                     <Nav navbar>
