@@ -7,7 +7,28 @@ function Body() {
     const [secondDropdownOpen, secondSetDropdownOpen] = useState(false);
 
     const first_toggle = () => firstSetDropdownOpen(!firstDropdownOpen);
-    const second_toggle = () => secondSetDropdownOpen(!secondDropdownOpen)
+    const second_toggle = () => secondSetDropdownOpen(!secondDropdownOpen);
+
+    const items = [
+        {
+            titleType: "single",
+            mainTitle: "معرفی سامانه"
+        },
+        {
+            titleType: "menu",
+            mainTitle: "قوانین و مقررات",
+            subTitle: ["مصوبات", "تعهدات اپراتوری"]
+        },
+        {
+            titleType: "single",
+            mainTitle: "پرسش های متداول"
+        },
+        {
+            titleType: "menu",
+            mainTitle: "ارتباط با ما",
+            subTitle: ["درباره ما", "تماس با ما"]
+        }
+    ]
 
     return(
         <Row className="body-content">
@@ -15,7 +36,7 @@ function Body() {
             <Col lg="8">
                 <Row>
                     <Col lg="6" className="body-header-container">
-                        <Nav>
+                        {/* <Nav>
                             <NavItem>
                                 <NavLink href="#">معرفی سامانه</NavLink>
                             </NavItem>
@@ -40,6 +61,20 @@ function Body() {
                                 <DropdownItem className="rtl-text">تماس با ما</DropdownItem>
                             </DropdownMenu>
                             </Dropdown>
+                        </Nav> */}
+                        <Nav>
+                            {items.map(item => {
+                                item.titleType === "single" ?
+                                <NavItem>
+                                    <NavLink href="#">{item.mainTitle}</NavLink>
+                                </NavItem>
+                                :
+                                <Dropdown nav isOpen={firstDropdownOpen} toggle={first_toggle}>
+                                <DropdownToggle nav caret>{item.mainTitle}</DropdownToggle>
+                                <DropdownMenu>
+                                    <DropdownItem className="rtl-text">{item.subTitle}</DropdownItem>
+                                </DropdownMenu>
+                            })}
                         </Nav>
                     </Col>
                 </Row>
