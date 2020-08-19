@@ -13,6 +13,7 @@ body {
   direction: rtl;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 15px;
 }
 
 .rtl-text {
@@ -29,10 +30,10 @@ body {
 
 .header-text {
   color: #ffffff;
-  margin-right: 5rem;
+  /* margin-right: 1rem; */
   padding-top: 1rem;
   font-size: 0.9rem;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 770px) {
