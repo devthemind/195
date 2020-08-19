@@ -1,15 +1,11 @@
 import React from 'react';
-import Header from './Header';
-import Body from './Body';
-import Footer from './Footer';
-import '../assets/styles/style.css';
+import Home from './views/home/Home';
+import './assets/styles/style.css';
 
 function App() {
-    return(
+    return (
         <div>
-            <Header />
-            <Body />
-            <Footer />
+            <Home />
         </div>
     )
 };

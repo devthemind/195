@@ -93,7 +93,7 @@ function Body() {
             </p>
           </Col>
           <Col lg="3" className="body-upper-cointainer-image">
-            <img src={require("../assets/images/body-pic.png")}></img>
+            <img src={require("../../../assets/images/body-pic.png")}></img>
           </Col>
         </Row>
         <Row>
